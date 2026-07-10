@@ -1,16 +1,35 @@
 {
-  "name": "angular-tutorial",
-  "private": true,
+  "name": "angular.dev",
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "^22.1.0-next",
+    "@angular/compiler": "^22.1.0-next",
+    "@angular/core": "^22.1.0-next",
+    "@angular/forms": "^22.1.0-next",
+    "@angular/platform-browser": "^22.1.0-next",
+    "@angular/router": "^22.1.0-next",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.16.0"
   },
   "devDependencies": {
-    "typescript": "^5.2.2",
-    "prettier": "^3.3.1",
-    "vite": "^5.2.0"
+    "@angular/build": "^22.1.0-next",
+    "@angular/cli": "^22.1.0-next",
+    "@angular/compiler-cli": "^22.1.0-next",
+    "@types/node": "^16.11.35",
+    "typescript": "~6.0.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "lmdb@3.5.6": true,
+    "msgpackr-extract@3.0.4": true,
+    "@parcel/watcher@2.5.6": true
   }
 }

@@ -11,9 +11,9 @@ import { HousingLocationInfo } from "../housinglocation";
         <input type="text" placeholder="Filter by city" />
         <button class="primary" type="button">Search</button>
       </form>
-      <section class="results">
-        <app-housing-location/>
-      </section>
+    </section>
+    <section class="results">
+      <app-housing-location [housingLocation]="housingLocation"/>
     </section>
   `,
   styleUrls: ['./home.css'],

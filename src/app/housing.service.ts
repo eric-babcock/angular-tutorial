@@ -1,6 +1,5 @@
 import { Service } from '@angular/core';
 import {HousingLocationInfo} from "./housingLocation";
-import {HousingLocation} from "./housing-location/housing-location";
 
 @Service()
 export class HousingService {
@@ -115,6 +114,14 @@ export class HousingService {
 
     getHousingLocationById(id: number): HousingLocationInfo | undefined {
         return this.housingLocationList.find((housingLocation) => housingLocation.id === id);
+    }
+
+    submitApplication(
+        firstName: string,
+        lastName: string,
+        email: string
+    ): void {
+        console.log(`Homes application received: first name: ${firstName}, last name: ${lastName}, email: ${email}.`);
     }
 }
 
